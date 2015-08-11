@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13588494385950" configfile="/POST_Project_624312/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="Login" x="338" y="946" id="pf13589152507380" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf13589152507381 pf13589152507382 pf13589152507383" inlinks="pf13589152507382 pf13589152507394" path="/Login.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="Home" x="122" y="946" id="pf13589152507395" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf13589152507394" inlinks="pf13589152507381" path="/Home.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ChangePasswordOnFirstLogin" x="554" y="946" id="pf13589152507396" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" inlinks="pf13589152507383" path="/ChangePasswordOnFirstLogin.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ScheduleSurgery" x="122" y="178" id="pf13589152507397" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" outlinks="pf13589152507398 pf13589152507399" inlinks="pf13589152507399" path="/ScheduleSurgery.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ScheduleSurgerySuccess" x="338" y="178" id="pf135891525073910" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" inlinks="pf13589152507398" path="/ScheduleSurgerySuccess.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="CancelAppointment" x="122" y="562" id="pf135891525073911" referenceLink="//@navigationRule.6/@fromViewId|" outlinks="pf135891525073912" path="/CancelAppointment.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="CancelSuccess" x="338" y="562" id="pf135891525073913" referenceLink="//@navigationRule.6/@navigationCase.0/@toViewId|" inlinks="pf135891525073912" path="/CancelSuccess.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="BillingAndPayment" x="122" y="1714" id="pf135891525073914" referenceLink="//@navigationRule.10/@fromViewId|" outlinks="pf135891525073915 pf135891525073916 pf135891525073917" path="/BillingAndPayment.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="DischargeSummary" x="338" y="1330" id="pf135891525073918" referenceLink="//@navigationRule.7/@navigationCase.0/@toViewId|" inlinks="pf135891525073915" path="/DischargeSummary.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="GenerateBill" x="338" y="1714" id="pf135891525073919" referenceLink="//@navigationRule.8/@navigationCase.0/@toViewId|" inlinks="pf135891525073916" path="/GenerateBill.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="DrugRequestGenerate" x="122" y="2482" id="pf135891525074020" referenceLink="//@navigationRule.9/@fromViewId|" outlinks="pf135891525074021" path="/DrugRequestGenerate.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="RequestSuccess" x="338" y="2482" id="pf135891525074022" referenceLink="//@navigationRule.9/@navigationCase.0/@toViewId|" inlinks="pf135891525074021" path="/RequestSuccess.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ReceiptIpd" x="338" y="2098" id="pf135891525074023" referenceLink="//@navigationRule.10/@navigationCase.0/@toViewId|" inlinks="pf135891525073917" path="/ReceiptIpd.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="OPDRegistration" x="122" y="2866" id="pf135891525074424" referenceLink="//@navigationRule.12/@navigationCase.0/@toViewId|" outlinks="pf135891525074425 pf135891525074426" inlinks="pf135891525074426" path="/OPDRegistration.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="Receipt" x="338" y="2866" id="pf135891525074427" referenceLink="//@navigationRule.11/@navigationCase.0/@toViewId|" inlinks="pf135891525074425" path="/Receipt.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ViewProfile" x="122" y="3250" id="pf135891525074628" referenceLink="//@navigationRule.13/@fromViewId|" outlinks="pf135891525074629" path="/ViewProfile.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ViewPayment" x="338" y="3250" id="pf135891525074730" referenceLink="//@navigationRule.13/@navigationCase.0/@toViewId|" inlinks="pf135891525074629" path="/ViewPayment.jsp"/>
+  <links id="pf13589152507381" target="pf13589152507395" source="pf13589152507380" outcome="success"/>
+  <links id="pf13589152507394" target="pf13589152507380" source="pf13589152507395" outcome="logout"/>
+  <links id="pf13589152507383" target="pf13589152507396" source="pf13589152507380" outcome="changepassword"/>
+  <links id="pf13589152507398" target="pf135891525073910" source="pf13589152507397" outcome="success"/>
+  <links id="pf135891525073912" target="pf135891525073913" source="pf135891525073911" outcome="success"/>
+  <links id="pf135891525073915" target="pf135891525073918" source="pf135891525073914" outcome="successDischarge"/>
+  <links id="pf135891525073916" target="pf135891525073919" source="pf135891525073914" outcome="successGenerate"/>
+  <links id="pf135891525074021" target="pf135891525074022" source="pf135891525074020" outcome="success"/>
+  <links id="pf135891525073917" target="pf135891525074023" source="pf135891525073914" outcome="successPayment"/>
+  <links id="pf135891525074425" target="pf135891525074427" source="pf135891525074424" outcome="success"/>
+  <links id="pf135891525074629" target="pf135891525074730" source="pf135891525074628" outcome="success"/>
+  <links id="pf13589152507382" target="pf13589152507380" source="pf13589152507380" outcome="fail">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf13589152507399" target="pf13589152507397" source="pf13589152507397" outcome="fail">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf135891525074426" target="pf135891525074424" source="pf135891525074424" outcome="failure">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+</pageflow:Pageflow>

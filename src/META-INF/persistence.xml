@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="Post_project">
+	<provider>oracle.toplink.essentials.ejb.cmp3.EntityManagerFactoryProvider</provider>
+	<class>infy.com.hospital.entity.WardEntity</class>
+	<class>infy.com.hospital.entity.SurgeryScheduleEntity</class>
+	<class>infy.com.hospital.entity.ProfileChangeRequestEntity</class>
+	<class>infy.com.hospital.entity.PaymentEntity</class>
+	<class>infy.com.hospital.entity.PatientEntity</class>
+	<class>infy.com.hospital.entity.OpdAppointmentEntity</class>
+	<class>infy.com.hospital.entity.OTEntity</class>
+	<class>infy.com.hospital.entity.LoginEntity</class>
+	<class>infy.com.hospital.entity.IpdAppointmentEntity</class>
+	<class>infy.com.hospital.entity.EmployeeEntity</class>
+	<class>infy.com.hospital.entity.DrugRequestEntity</class>
+	<class>infy.com.hospital.entity.DrugEntity</class>
+	<class>infy.com.hospital.entity.DoctorEntity</class>
+	<class>infy.com.hospital.entity.BiomedicalEquipmentEntity</class>
+	<class>infy.com.hospital.entity.BillingEntity</class>
+	<class>infy.com.hospital.entity.EmployeeLeaveEntity</class>
+            
+
+            <properties>
+                  <property name="toplink.jdbc.url" value="jdbc:oracle:thin:@10.122.130.39:1521:georli03"/>
+                  <property name="toplink.jdbc.user" value="t624312" />
+                  <property name="toplink.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />
+                  <property name="toplink.jdbc.password" value="t624312" />
+                  <property name="toplink.ddl-generation" value="create-tables" />
+                  <property name="toplink.jdbc.read-connections.max" value="1" />
+                  <property name="toplink.jdbc.read-connections.min" value="1" />
+                  <property name="toplink.jdbc.write-connections.max" value="1" />
+                  <property name="toplink.jdbc.write-connections.min" value="1" />
+                  <property name="toplink.logging.level" value="SEVERE" />
+
+            </properties>
+	</persistence-unit>
+</persistence>

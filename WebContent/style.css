@@ -1,0 +1,149 @@
+@CHARSET "ISO-8859-1";
+
+* {
+	margin: 0px 0px 0px 0px;
+}
+
+html,body {
+	margin: 0px 0px 0px 0px;
+	height: 100%;
+}
+body
+	{
+		background-color:Moccasin  ;
+	}
+
+#header {
+	background: url('hospitalheader.jpg') no-repeat  top center;
+	text-align: right;
+	font-weight: bolder;
+	color: white;
+	font-size: 19px;
+	height: 30%;
+	
+	
+}
+
+#content { 
+	 
+	text-align: left;
+	font-family: Arial;
+	font-size: 13px;
+	padding-top: 20px;
+	padding-bottom: 5%;
+	color: black;
+	display: block;
+	float: center;
+	background-color: #FF8282 ;
+	color: black;
+	min-height: auto;
+	height: auto !important;
+	margin: 0 auto -4em;
+	margin-top: 30px;
+	width:70%;
+}
+
+#whiteSpace {
+	background: rgb(147, 147, 147);
+	height: 40em;
+	color: white;
+}
+
+
+
+
+.heading {
+	height: 9px;
+	margin: 0px 40px 0px 0px;
+	clear: both;
+	text-align: right;
+	font-family: "Comic Sans MS", Verdana, serif;
+	font-size: 40px;
+	color: black;
+}
+
+table {
+	border-collapse:collapse;
+
+	text-align: left;
+} 
+ 
+.tableHeader {
+	background-color: rgb(150, 150, 150);
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	valign: center;
+}
+
+.dataTableHeader {
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	valign: center;
+	font-size: 14;
+}
+
+.dataTableBody {
+	color: black;
+	text-align: center;
+	valign: center;
+	font-weight: normal;
+	font-size: 14;
+}
+
+td {
+	text-align: "center";
+	font-weight: bold;
+}
+
+hr {
+	height: 1px;
+}
+
+h3{
+	color: black;
+	}
+
+a {
+	color: black;
+	font-weight: bold;
+	font-family: "Trebuchet MS";
+	font-size: medium;
+	text-decoration: underline;
+	font-weight: bold;
+}
+ 
+a:hover { 
+	color: black;
+	font-size: large;
+}
+
+.BorderLessTable { 
+	border: 0;
+	border-color: transparent;
+}   
+  
+label{ 
+	color: black;
+	font-family: cursive;
+	font-stretch: wider;
+	font-size: 20px;
+	font-weight: normal;
+}
+h1 {   
+
+     margin: 0;  
+     padding: 0;  
+     float: right;  
+     margin-top: 30px;  
+	color:red;
+padding-right:60px;
+} 
+#nav-menu
+	{
+		margin-top: 50px;
+		width:70%;
+		background-color: Salmon  ;
+	}
+ 
